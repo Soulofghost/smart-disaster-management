@@ -9,4 +9,4 @@ FROM eclipse-temurin:21-jre-alpine
 WORKDIR /app
 COPY --from=build /app/target/smart-disaster-management-0.0.1-SNAPSHOT.jar app.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar", "--spring.profiles.active=h2"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
